@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  background-color: #eaf2ea;
+  width: 100vw;
+  text-align: center;
+  padding: 20px 10px;
+  height: auto;
+  margin-top: -19px;
+}
+
+.h1 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.ribbon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.locationInput,
+.input {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 480px;
+  max-width: 80vw;
+}
+
+.go {
+  background: #2f5f38;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.select {
+  padding: 6px 10px;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.tags {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.tag {
+  display: inline-block;
+  background: #e9f3ea;
+  color: #2f5f38;
+  padding: 4px 10px;
+  margin: 4px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.search {
+  border: none;
+}
