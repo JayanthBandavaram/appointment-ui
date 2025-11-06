@@ -8,7 +8,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { DOCTORS } from "./Doctors";
-import "./Profile.css"; // ✅ Normal CSS file import
+import "./Profile.css"; 
 
 export default function Profile() {
   const { id } = useParams();
@@ -178,7 +178,7 @@ export default function Profile() {
           <div className="profilecard">
             <div className="title">Featured Reviews (102)</div>
             <div className="reviews-container">
-              {/* ---- CARD 1 ---- */}
+              
               <div className="review-card">
                 <div className="review-header">
                   <div className="review-user">
@@ -208,7 +208,7 @@ export default function Profile() {
                 </div>
               </div>
 
-              {/* ---- CARD 2 ---- */}
+             
               <div className="review-card">
                 <div className="review-header">
                   <div className="review-user">

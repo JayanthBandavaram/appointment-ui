@@ -1,5 +1,4 @@
-/* Reset */
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@
   padding: 40px 0;
 }
 
-/* Doctor Card Styling */
+
 .card {
   width: 400px !important;
   background-color: #fff7e2;
@@ -49,7 +48,7 @@
 
 .rate {
   position: absolute;
-  bottom: 7px; /* pushes it slightly below the image */
+  bottom: 7px;
   background-color: #000000;
   color: #ffb400;
   font-weight: 600;

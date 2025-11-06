@@ -369,33 +369,33 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-} /* Each review card box */
+}
 .review-card {
   border: 1px solid #eef2ea;
   border-radius: 12px;
   padding: 12px;
   background-color: #fff;
-} /* Header row — user info + date */
+} 
 .review-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} /* Left section — user image and name */
+} 
 .review-user {
   display: flex;
   align-items: center;
   gap: 10px;
-} /* User image */
+} 
 .user-img {
   border-radius: 50%;
   width: 76px;
   height: 76px;
   object-fit: cover;
-} /* User name */
+} 
 .user-name {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
-} /* Subtext (consulted for...) */
+} 
 .user-subtext {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
@@ -403,16 +403,16 @@
   font-size: 18px;
   text-align: left;
   margin-top: 6px;
-} /* Date on right */
+}
 .review-date {
   color: #979797;
   font-size: 19px;
-} /* Stars */
+} 
 .review-stars {
   margin: 6px 10px 15px 0;
   display: flex;
   align-self: left;
-} /* Feedback text */
+} 
 .review-text {
   text-align: left;
   color: #2e2f2e;
