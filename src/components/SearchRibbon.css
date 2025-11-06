@@ -6,26 +6,25 @@
 
 .wrap {
   background-color: #eaf2ea;
-  width: 100vw;
+  width: 100%;
   text-align: center;
-  padding: 20px 10px;
-  height: auto;
+  padding: 25px 12px;
   margin-top: -19px;
 }
 
 .h1 {
-  text-align: center;
-  color: #000000;
-  margin-bottom: 20px;
+  color: #000;
+  margin-bottom: 18px;
+  font-size: 1.7rem;
 }
 
 .ribbon {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  border: none;
+  gap: 12px;
+  flex-wrap: wrap; /* ✅ allow wrap on smaller screens */
+  margin-bottom: 18px;
 }
 
 .locationInput,
@@ -33,16 +32,26 @@
   display: flex;
   align-items: center;
   background: white;
-  padding: 6px 12px;
+  padding: 10px 12px;
   border-radius: 10px;
+  border: 1px solid #d9ded9;
+  min-width: 250px;
 }
 
 .input input {
   border: none;
   outline: none;
   padding: 8px;
-  width: 480px;
-  max-width: 80vw;
+  width: 350px;
+  max-width: 100%;
+  font-size: 15px;
+}
+
+.search {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
 }
 
 .go {
@@ -54,28 +63,32 @@
   cursor: pointer;
 }
 
+/* FILTERS SECTION */
 .filters {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 8px;
+  margin-top: 12px;
 }
 
 .select {
-  padding: 6px 10px;
-  background-color: #f3f3f3;
-  border: none;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #cfd6cf;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
+/* TAGS */
 .tags {
-  text-align: center;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .tag {
   display: inline-block;
-  background: #e9f3ea;
+  background: #dfeee1;
   color: #2f5f38;
   padding: 4px 10px;
   margin: 4px;
@@ -83,6 +96,52 @@
   font-size: 14px;
 }
 
-.search {
-  border: none;
+/* ✅ RESPONSIVE MEDIA QUERIES */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .h1 {
+    font-size: 1.4rem;
+  }
+  .input input {
+    width: 250px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .wrap {
+    padding: 20px 8px;
+  }
+
+  .h1 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+    padding: 0 10px;
+  }
+
+  .ribbon {
+    flex-direction: column; /* ✅ stack search fields */
+    width: 100%;
+  }
+
+  .locationInput,
+  .input {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .input input {
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .select {
+    width: 100%;
+    max-width: 300px;
+  }
 }

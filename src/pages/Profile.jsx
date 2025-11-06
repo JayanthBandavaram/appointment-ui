@@ -24,9 +24,9 @@ export default function Profile() {
   return (
     <div className="page">
       <div className="head">
-        <img className="avatar" src={doctor.photo} alt={doctor.name} />
+        <img className="profile-avatar" src={doctor.photo} alt={doctor.name} />
         <div>
-          <div className="name">
+          <div className="profile-name">
             {doctor.name}
             <span style={{ color: "#4c64edff" }}> ✪ </span>
           </div>
