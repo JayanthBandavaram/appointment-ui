@@ -1,4 +1,4 @@
-/* Doctors.css - page + container */
+
 .page {
   box-sizing: border-box;
   max-width: 1200px;
@@ -8,19 +8,21 @@
   background: #f9fbf9;
 }
 
-/* Search ribbon area spacing (keeps header + cards separated) */
+
 .wrap, .search-ribbon {
   width: 100%;
   margin: 0 auto;
 }
 
-/* Cards container: GRID (robust and predictable) */
+
 .cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
-  align-items: stretch; /* makes cards equal height */
+  display: flex;
+  flex-wrap: wrap;               
+  justify-content: center;       
+  gap: 22px;                     
+  align-items: stretch;         
   padding: 18px 0 40px;
   width: 100%;
   box-sizing: border-box;
 }
+

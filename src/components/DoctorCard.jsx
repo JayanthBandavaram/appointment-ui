@@ -26,7 +26,7 @@ export default function DoctorCard({ doc }) {
         </div>
       </div>
       <div className="actions">
-        <Link to={`/profile/${doc.id}`} className="ghost">
+        <Link to={`/profile/${doc.id}`} className="profilelink">
           View Profile
         </Link>
         <button className="bookconsultation">Book a consultation</button>

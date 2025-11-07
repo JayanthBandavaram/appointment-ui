@@ -5,7 +5,7 @@
   font-family: "Dinpro", sans-serif;
 }
 
-/* NAVBAR BASE */
+
 .bar {
   background-color: #fff7e2;
   border-bottom: 1px solid #e4e7e4;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-/* BRAND */
+
 .brand {
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
   display: block;
 }
 
-/* LINKS */
+
 .links {
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@
   font-weight: 700 !important;
 }
 
-/* AUTH BUTTONS */
+
 .auth {
   display: flex;
   gap: 8px;
@@ -77,10 +77,9 @@
   color: white;
 }
 
-/* -------------------- RESPONSIVE -------------------- */
 
-/* Tablet */
-@media (max-width: 900px) {
+
+@media screen and (max-width: 1200px) {
   .inner {
     gap: 20px;
   }
@@ -90,9 +89,13 @@
   }
 }
 
-/* Mobile */
-@media (max-width: 680px) {
+
+@media  screen and (max-width: 600px) {
+  .bar{
+    width: 100%;
+  }
   .inner {
+    width: 100%;
     flex-direction: column;
     gap: 14px;
     text-align: center;
@@ -109,8 +112,8 @@
   }
 }
 
-/* Extra Small phones */
-@media (max-width: 420px) {
+
+@media screen and (max-width: 420px) {
   .brand img {
     width: 90px;
   }

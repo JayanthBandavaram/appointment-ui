@@ -1,62 +1,77 @@
-/* DoctorCard.css - full, robust, responsive */
 
-/* reset within component scope */
 .doctor-card, .card {
   box-sizing: border-box;
 }
 
-/* Use one main selector your JSX already uses: .card */
+
+
 .card {
   display: flex;
-  flex-direction: column;
-  background: #fff;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;  
+  padding: 20px;            
+  gap:6px;
   border: 1px solid #e6ece2;
   border-radius: 14px;
   overflow: hidden;
+  background-color: #FFF7E2;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
-  min-height: 420px;          /* enforce uniform card height */
+  min-height: 520px;
+  min-width: 280px;
+  max-width: 400px; 
 }
 
-/* Hover */
+
+
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* Top image block: fixed height, covers, centered */
+
 .top {
   width: 100%;
-  height: 210px;              /* consistent image area */
+  height: 210px;
   overflow: hidden;
-  position: relative;
-  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  gap: 10px;                  
 }
 
+
+
 .avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;          /* no stretch, crop cleanly */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;         
   object-position: center;
   display: block;
 }
 
-/* rating badge */
+
+
 .rate {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
   background: rgba(255,255,255,0.95);
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 12px;
   font-weight: 700;
   color: #2f5f38;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  text-align: center; 
+  margin-top: -50px;      
 }
 
-/* Content area */
+
+
+
 .name {
   margin: 14px 16px 6px;
-  font-size: 18px;
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   color: #243423;
   line-height: 1.15;
@@ -67,10 +82,10 @@
   font-size: 14px;
   color: #576658;
   line-height: 1.4;
-  min-height: 44px; /* keep spacing consistent */
+  min-height: 44px; 
 }
 
-/* badges/prices row */
+
 .badges {
   display: flex;
   gap: 10px;
@@ -85,49 +100,54 @@
   background: #fffaf2;
   font-size: 13px;
   color: #2f5f38;
+  width: 130px;
 }
 
-/* actions stay at bottom: use margin-top:auto to push down */
+
 .actions {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   margin: 14px;
   margin-top: auto;
 }
 
-/* ghost link */
-.ghost {
+
+.profilelink {
   flex: 1;
-  padding: 10px 12px;
+  padding: 5px 5px;
+  font-size: 15px;
   border-radius: 10px;
   border: 1px solid #2f5f38;
   color: #2f5f38;
   text-align: center;
   text-decoration: none;
   background: transparent;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-/* primary button */
+
 .bookconsultation {
   flex: 1;
   padding: 10px 12px;
   border-radius: 10px;
+  font-size: 15px;
+  width: 240px;
   border: none;
   background: #2f5f38;
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
 }
 
-/* small screens: adjust heights and spacing */
-@media (max-width: 900px) {
+
+@media screen and (max-width: 900px) {
   .top { height: 180px; }
   .card { min-height: 380px; }
   .name { font-size: 17px; }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .cards-container { gap: 16px; padding: 14px 6px 30px; }
   .top { height: 150px; }
   .card { min-height: 340px; border-radius: 12px; }
